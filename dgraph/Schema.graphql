@@ -1,4 +1,4 @@
 type Station {
-  node: ID !
+  node: Int64!
   edge: [Station]
 }

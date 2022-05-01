@@ -1,1 +1,8 @@
-test
+query {
+nodes(func: has(node)){
+ node
+  edge {
+	node
+  }
+}
+}
