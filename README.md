@@ -10,4 +10,12 @@ http://www.railwaycodes.org.uk/stations/station0.shtm
 
 https://www.kaggle.com/headsortails/train-stations-in-europe
 
+
+ERD
+
 https://drive.google.com/file/d/1sEZ6x9S8y8y8owQ5MTp-CGm2eJiZvgZW/view
+
+
+Queries doc
+
+https://docs.google.com/document/d/1Z2PIIiEjz0C-qZl7API__fCU2rWTm8UpdDWIFiX8X3k/edit
