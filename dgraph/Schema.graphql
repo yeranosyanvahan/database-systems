@@ -1,0 +1,4 @@
+type Station {
+  node: ID !
+  edge: [Station]
+}
