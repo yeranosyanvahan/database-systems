@@ -1,3 +1,4 @@
+
 _:st1 <dgraph.type> "Station" .
 _:st2 <dgraph.type> "Station" .
 _:st3 <dgraph.type> "Station" .

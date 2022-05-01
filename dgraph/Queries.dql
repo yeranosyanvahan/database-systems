@@ -1,8 +1,21 @@
 query {
-nodes(func: has(node)){
- node
-  edge {
-	node
+  nodes(func: has(node)){
+   node
+    edge {
+  	node
+    }
   }
 }
+
+query {
+
+ A as var(func: eq(node, 1))
+ M as var(func: eq(node, 2))
+
+ path as shortest(from: uid(A), to: uid(M), numpaths: 2) {
+  edge @facets(cost)
+ }
+ path(func: uid(path)) {
+   node
+ }
 }
