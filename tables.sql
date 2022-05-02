@@ -1,14 +1,14 @@
 CREATE TABLE train(
 	id INTEGER PRIMARY KEY,
 	train_type VARCHAR(50),
-	train_status VARCHAR(50),
+	status VARCHAR(50),
 	num_of_seats INTEGER NOT NULL,
-	train_speed INTEGER
+	speed INTEGER
 );
 
 CREATE TABLE station(
 	id INTEGER PRIMARY KEY,
-	station_name VARCHAR(50) NOT NULL,
+	name VARCHAR(50) NOT NULL,
 	num_of_entries INTEGER NOT NULL,
 	num_of_exits INTEGER NOT NULL,
 	longitude DECIMAL(9,6) NOT NULL,
@@ -33,6 +33,11 @@ CREATE TABLE city(
 	timezone
 );
 
+CREATE TABLE country(
+	country_code INTEGER PRIMARY KEY,
+	name VARCHAR(100)
+);
+
 CREATE TABLE staff(
 	id INTEGER PRIMARY KEY,
 	name VARCHAR(70)
@@ -51,8 +56,20 @@ CREATE TABLE schedule(
 	arrival_time DATETIME NOT NULL
 );
 
+CREATE TABLE ride(
+	id INTEGER PRIMARY KEY,
+	ride_date DATETIME NOT NULL
+);
+
 CREATE TABLE delay(
 	id INTEGER PRIMARY KEY,
+	new_dep_time DATETIME NOT NULL,
+	new_arr_time DATETIME NOT NULL
+);
+
+CREATE TABLE accident(
+	id INTEGER PRIMARY KEY,
+	accident_type VARCHAR(50)
 );
 
 CREATE TABLE ticket(
