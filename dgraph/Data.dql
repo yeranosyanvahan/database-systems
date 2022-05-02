@@ -1,12 +1,21 @@
+
 _:st1 <dgraph.type> "Station" .
 _:st2 <dgraph.type> "Station" .
 _:st3 <dgraph.type> "Station" .
 _:st4 <dgraph.type> "Station" .
+_:st5 <dgraph.type> "Station" .
+_:st6 <dgraph.type> "Station" .
+
 _:st1 <node> "1" .
 _:st2 <node> "2" .
 _:st3 <node> "3" .
 _:st4 <node> "4" .
+_:st5 <node> "5" .
+_:st6 <node> "6" .
 
 _:st1 <edge> _:st2 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=10) .
 _:st2 <edge> _:st1 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=12) .
 _:st3 <edge> _:st1 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=13) .
+_:st1 <edge> _:st4 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=10) .
+_:st1 <edge> _:st5 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=12) .
+_:st1 <edge> _:st6 (start=2006-02-02T13:01:09, end=2006-02-02T13:01:09, cost=13) .

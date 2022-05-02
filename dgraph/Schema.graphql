@@ -1,4 +1,6 @@
 type Station {
-  node: ID !
-  edge: [Station]
+  node
+  edge
 }
+node: int @index(int) @upsert .
+edge: [uid] .
